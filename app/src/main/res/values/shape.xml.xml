@@ -1,0 +1,11 @@
+<resources>
+    <style name="SmallShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSizeTopLeft">@dimen/corner</item>
+        <item name="cornerSizeTopRight">@dimen/corner</item>
+        <item name="cornerSizeBottomLeft">@dimen/corner</item>
+        <item name="cornerSizeBottomRight">@dimen/corner</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+</resources>

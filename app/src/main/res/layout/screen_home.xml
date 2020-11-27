@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/homeTopImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/top_home_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/homeTopSearchImage"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:fitsSystemWindows="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/homeTopImage"
+                app:srcCompat="@drawable/ic_outline_search_24_white"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/homeTopLocationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_location_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/homeTopImage"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/homeTopTitle"
+                style="@style/H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="@string/Budapest"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/homeTopLocationIcon"
+                app:layout_constraintStart_toEndOf="@+id/homeTopLocationIcon"
+                app:layout_constraintTop_toTopOf="@+id/homeTopLocationIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/forYouLayer"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent" />
+
+        <include layout="@layout/devider" />
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="ru.triptomeet.ui.mainscreen.home.info.InfoIconsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <include layout="@layout/devider" />
+
+        <FrameLayout
+            android:id="@+id/inspirationsLayer"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"/>
+
+        <include layout="@layout/devider" />
+
+        <FrameLayout
+            android:id="@+id/popularLayer"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"/>
+
+        <include layout="@layout/devider" />
+
+        <FrameLayout
+            android:id="@+id/localsLayer"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

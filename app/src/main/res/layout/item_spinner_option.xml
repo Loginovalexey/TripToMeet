@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/marginStart"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/impressionSpinnerTitle"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/howLongTrip"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/impressionSpinnerIcon"
+        android:layout_width="13dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_arrowdown"
+        app:layout_constraintBottom_toBottomOf="@+id/impressionSpinnerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/impressionSpinnerTitle"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/impressionSpinnerDescription"
+        style="@style/H5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginStart"
+        android:layout_marginTop="16dp"
+        android:text="@string/howLongTripAnswer"
+        android:textAlignment="viewStart"
+        android:textStyle="normal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/impressionSpinnerTitle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/impressionSpinnerDescription" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

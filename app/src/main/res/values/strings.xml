@@ -1,0 +1,155 @@
+<resources>
+
+    <string name="app_name" translatable="false">TripToMeet</string>
+
+    <!--    Splash screen-->
+
+    <string name="begin">Begin</string>
+    <string name="titleSplash1">Explore new</string>
+    <string name="bodySplash1">Locals can make your \ntrip unforgettable</string>
+    <string name="titleSplash2">Plan your leisure time</string>
+    <string name="bodySplash2">Choose from thousands of \noffers or plan a unique one</string>
+    <string name="titleSplash3">Share your emotions</string>
+    <string name="bodySplash3">Enjoy your journey.\nDon\'t forget to share your emotions</string>
+
+    <!--    SignIn screen-->
+
+    <string name="feelLikeLocal">Feel\n like local</string>
+    <string name="continueAsGuest">Сontinue as a guest</string>
+    <string name="enterThroughFacebook">Sign in with FaceBook</string>
+    <string name="continueVal">Сontinue</string>
+    <string name="continueByPhoneNumber">Continue with mobile number</string>
+    <string name="enterEmailToRequest">Enter your e-mail to request</string>
+    <string name="email" translatable="false">Email</string>
+
+    <!--    Questions screen-->
+
+    <string name="questionsCheckTitle1">Travel for you is..?</string>
+    <string name="questionsCheckTitle2">Choose what suits you most</string>
+    <string name="walk">City walk</string>
+    <string name="beach">Relax on the beach</string>
+    <string name="photo">New photos</string>
+    <string name="dating">New acquaintances</string>
+    <string name="nature">Nature</string>
+    <string name="food">Local food</string>
+    <string name="shopping">Shopping</string>
+    <string name="excursions">Excursions</string>
+    <string name="unknown">Unknown</string>
+    <string name="study">Study</string>
+
+    <!--    Home screen-->
+
+    <string name="forYou">For you</string>
+    <string name="inspiration">Inspiration</string>
+    <string name="popular">Popular</string>
+    <string name="localResidents">Local residents</string>
+    <string name="seeAll">See all</string>
+    <string name="free">free</string>
+    <string name="rubHour">rub/hour</string>
+
+    <!--    Search screen-->
+
+    <string name="searchLocation">Search location</string>
+    <string name="cityOrCountry">City or country</string>
+    <string name="search_history">Search history</string>
+
+    <!--    Impression screen-->
+    <string name="writeReview">Write a feedback</string>
+    <string name="shareWithFriends">Share with friends</string>
+    <string name="reviews">Reviews</string>
+    <string name="coninue">Coninue</string>
+
+    <!--    Offer screen-->
+
+    <string name="activities">Activities</string>
+    <string name="inspirations">Inspirations</string>
+    <string name="change">Change</string>
+    <string name="delete">Delete</string>
+    <string name="button_retry">Retry</string>
+    <string name="label_error">Error</string>
+
+    <!--    Toolbar-->
+
+    <string name="like">Like</string>
+
+    <!--    Mock data-->
+
+    <string name="Budapest">Budapest</string>
+    <string name="oldTownStreets">Streets of the old town</string>
+    <string name="rooftopWalks">Rooftop walks</string>
+    <string name="oldTownWalk">Old town \nwalk</string>
+    <string name="geyzersTrip">Trip to \nheyzers</string>
+    <string name="ascentToMount">Ascend to mount \nHelerd</string>
+    <string name="nearTheTown">Near the town</string>
+    <string name="travelToDebrecen">Travel to Debrecen</string>
+    <string name="allAboutFlights">All about flights</string>
+    <string name="budaFortress">Buda fortress</string>
+    <string name="min90">90 min.</string>
+
+<!--    Impression screen mock data (Only russian) -->
+
+    <string name="impressionScreenTitle" translatable="false">Поездка в Дебрецен</string>
+
+    <string name="impressionScreenMainDescription" translatable="false">        Венгерский
+        Дебрецен — идеальное направление выходного дня — дёшево, близко, вкусно, любопытно.
+        Много людей сбегало в этот городок от непогоды и суеты. В этом блоге я делюсь главными
+        точками маршрута.
+    </string>
+
+    <string name="emiliyaRance" translatable="false">Эмилия Ранце</string>
+
+    <string name="may">May</string>
+
+    <string name="impressionScreenDescription1" translatable="false">Прогулку стоит начать с
+        центральной площади города, где располагается Большая церковь (Kossuth tér. 1) —
+        построенный в стиле неоклассицизм в 1821 году Кальвинистский собор. Две башенки этого
+        крупнейшего в стране протестантского храма венчают часы, бой которых можно слышать
+        несколько раз в день. Позади церкви разбит небольшой сквер, а за ним Реформаторский
+        колледж с музеем, где можно узнать об истории города, собственно, Реформации и посмотреть
+        на крутейшую библиотеку.\n\n
+        На площади перед собором работают несколько кафе, а по правой стороне площади (если
+        стоять спиной к собору) стоит здание шикарной гостиницы «Золотой бык» (Debrecen, Piac u.
+        11-15) — старейшей в Венгрии. Останавливаться здесь смысла нет — отзывы об отеле так себе,
+        а вот осмотреть её снаружи или пообедать в Стеклянном зале — шикарно украшенном помещении
+        с огромной люстрой, можно.</string>
+
+    <string name="impressionScreenDescription2" translatable="false">Соседняя дверь —
+        небольшой супермаркет Tesco Express, где можно взять на вечер токайского вина или пива.
+        Кстати, венгерская массовая пивоварня Soproni варит очень недурный IPA — по 40 рублей за
+        бутылку. Здесь же можно найти с десяток сортов европейского пива. А вот за бельгийским
+        блондом и прочими сортами из Королевства стоит зайти в Belga Etterem (Debrecen, Piac u. 29),
+        что в минуте ходьбы. Обедать здесь, пожалуй, не стоит, а вот присмотреться к пивной карте
+        можно — она радует и разнообразием, и ценами.\n\n
+        За культурной жизнью стоит отправиться в музей Дери (Deri ter. 1), экспозиция
+        которого посвящена этнографии и национальному искусству. В соседнем музейном центре Modem
+        (Baltazár Dezső tér 1.) можно познакомиться с современным искусством Венгрии. Закончить
+        прогулку лучше в тихом и приятном парке Nagyerdei, расположенном в некотором отдалении от
+        центра. Здесь же стоит взглянуть на здание Дебреценского университета — одного из
+        крупнейших в стране, где учатся 30 тысяч студентов.</string>
+
+    <string name="howLongTrip" translatable="false">На сколько ехать</string>
+    <string name="howLongTripAnswer" translatable="false">В сам Дебрецен — максимум на пару дней,
+        больше здесь делать, пожалуй, нечего. Если планируете поездку в Будапешт (около трех часов
+        на машине или поезде) или в соседнюю Румынию, то сроки поездки можно растягивать до
+        бесконечности.</string>
+
+    <string name="whereToDiner" translatable="false">Где пообедать</string>
+    <string name="whereToStop" translatable="false">Где остановиться</string>
+    <string name="howToReach" translatable="false">Как добраться</string>
+
+
+    <string name="marcoSalen" translatable="false">Марко Сален</string>
+    <string name="marcoSalenReview" translatable="false">"Спасибо за подробное описание.
+        Множество полезной информации! Не думал, что в таком небольшом городке столько всего
+        интересного."</string>
+
+    <string name="ivanneGranke" translatable="false">Иванни Гранке</string>
+    <string name="ivanneGrankeReview" translatable="false">Как всегда, очень полезно.
+        Открылись секретные места, которые раньше не замечал. Получил огромное удовольствие! Один
+        момент - такси из аэропорта дороже (около 900 р., но правда чуть подальше центра ехали).
+        Возможно мне просто не повезло.</string>
+
+    <string name="rub600">600 rub.</string>
+
+
+</resources>

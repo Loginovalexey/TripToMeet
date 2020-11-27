@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="@dimen/marginTop">
+
+
+    <ImageView
+        android:id="@+id/localItemImage"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emilia_racne"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/localItemName"
+        style="@style/H4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Эмилия Рацне"
+        app:layout_constraintStart_toEndOf="@+id/localItemImage"
+        app:layout_constraintTop_toTopOf="@+id/localItemImage" />
+
+    <TextView
+        android:id="@+id/localItemInterests"
+        style="@style/Text10spMontserratRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Музыка"
+        app:layout_constraintStart_toEndOf="@+id/localItemImage"
+        app:layout_constraintTop_toBottomOf="@+id/localItemName" />
+
+
+    <ImageView
+        android:id="@+id/localItemCostIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_tick_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localItemImage"
+        app:layout_constraintTop_toBottomOf="@+id/localItemInterests"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/localItemTextView"
+        style="@style/Text10spMontserratMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="400 руб/час"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/localItemCostIcon"
+        app:layout_constraintTop_toBottomOf="@+id/localItemInterests" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

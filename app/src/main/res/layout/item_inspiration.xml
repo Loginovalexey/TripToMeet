@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/inspirationItemImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen_inspirations_all_about_flights"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/inspirationItemTitle"
+        style="@style/H3"
+        android:layout_width="132dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Все о перелетах"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspirationItemImage" />
+
+
+    <ImageView
+        android:id="@+id/inspirationItemLikeIcon"
+        android:layout_width="20dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inspirationItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/inspirationItemTitle"
+        app:srcCompat="@drawable/ic_like_18_16"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/inspirationItemLikeText"
+        style="@style/H4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="120"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inspirationItemLikeIcon"
+        app:layout_constraintTop_toBottomOf="@+id/inspirationItemTitle" />
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inspirationItemCommentText"
+        app:layout_constraintTop_toBottomOf="@+id/inspirationItemTitle"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/inspirationItemCommentText"
+        style="@style/H4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="19"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspirationItemTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

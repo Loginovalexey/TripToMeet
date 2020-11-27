@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Splash screen-->
+
+    <string name="begin">Начать</string>
+    <string name="titleSplash1">Исследуй новое</string>
+    <string name="bodySplash1">Местные жители помогут сделать \nтвое путешествие
+        незабываемым</string>
+    <string name="titleSplash2">Планируй досуг</string>
+    <string name="bodySplash2">Выбирай из тысяч предложений \nили запланируй уникальное</string>
+    <string name="titleSplash3">Делись эмоциями</string>
+    <string name="bodySplash3">Наслаждайся своим путешествием.\nНе забудь поделиться
+        эмоциями</string>
+
+
+    <!--    SignIn screen-->
+
+    <string name="feelLikeLocal">Почувствуй себя местным</string>
+    <string name="continueAsGuest">Продолжить как гость</string>
+    <string name="enterThroughFacebook">Войти через FaceBook</string>
+    <string name="continueVal">Продолжить</string>
+    <string name="continueByPhoneNumber">Продолжить по номеру телефона</string>
+    <string name="enterEmailToRequest">Введите e-mail чтобы продолжить</string>
+
+    <!--    Questions screen-->
+
+    <string name="questionsCheckTitle1">Путешествие для тебя?…</string>
+    <string name="questionsCheckTitle2">Выбери, что подходит тебе больше всего</string>
+    <string name="walk">Прогулка по городу</string>
+    <string name="beach">Отдых на пляже</string>
+    <string name="photo">Новые фотографии</string>
+    <string name="dating">Новые знакомства</string>
+    <string name="nature">Природа</string>
+    <string name="food">Местная еда</string>
+    <string name="shopping">Шоппинг</string>
+    <string name="excursions">Экскурсии</string>
+    <string name="unknown">Неизведанное</string>
+    <string name="study">Исследование</string>
+
+    <!--    Home screen-->
+
+    <string name="forYou">Для тебя</string>
+    <string name="inspiration">Вдохновение</string>
+    <string name="popular">Популярное</string>
+    <string name="localResidents">Местные жители</string>
+    <string name="seeAll">См. все</string>
+    <string name="free">бесплатно</string>
+    <string name="rubHour">руб/час</string>
+
+    <!--    Search screen-->
+
+    <string name="searchLocation">Поиск локации</string>
+    <string name="cityOrCountry">Город или страна</string>
+    <string name="search_history">История поиска</string>
+
+    <!--    Impression screen-->
+    <string name="writeReview">Написать отзыв</string>
+    <string name="shareWithFriends">Поделиться с друзьями</string>
+    <string name="reviews">Отзывы</string>
+    <string name="coninue">Продолжить</string>
+
+    <!--    Offer screen-->
+
+    <string name="activities">Активности</string>
+    <string name="inspirations">Вдохновения</string>
+    <string name="change">Именить</string>
+    <string name="delete">Удалить</string>
+    <string name="button_retry">Повторить</string>
+    <string name="label_error">Ошибка</string>
+
+    <!--    Toolbar-->
+    <string name="like">Понравилось</string>
+
+    <!--    Mock data-->
+
+    <string name="Budapest">Будапешт</string>
+    <string name="oldTownStreets">Улочки старого города</string>
+    <string name="rooftopWalks">Прогулки по крышам</string>
+    <string name="oldTownWalk">Прогулка \nпо старому городу</string>
+    <string name="geyzersTrip">Поездка \nна гейзеры</string>
+    <string name="ascentToMount">Восхождение \nна гору Гелерд</string>
+    <string name="nearTheTown">Рядом с городом</string>
+    <string name="travelToDebrecen">Поездка в Дебрецен</string>
+    <string name="allAboutFlights">Все о перелетах</string>
+    <string name="budaFortress">Будайская крепость</string>
+    <string name="min90">90 мин.</string>
+    <string name="rub600">600 руб.</string>
+    <string name="may">Май</string>
+
+</resources>

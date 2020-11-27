@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="@dimen/marginTop"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/offerItemImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/adverts_image"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/offerItemTitle"
+        style="@style/H3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Название"
+        android:textAlignment="textStart"
+        app:layout_constraintHeight_percent=".044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offerItemImage" />
+
+    <ImageView
+        android:id="@+id/offerItemCostIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/ic_tick_black"
+        app:layout_constraintBottom_toBottomOf="@+id/offerItemCostText"
+        app:layout_constraintEnd_toStartOf="@+id/offerItemCostText"
+        app:layout_constraintTop_toBottomOf="@+id/offerItemImage"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/offerItemCostText"
+        style="@style/Text10spMontserratMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1200 руб."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offerItemImage" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/offerItemTitleBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="offerItemCostIcon,offerItemTitle,offerItemCostIcon"
+        tools:layout_editor_absoluteY="715dp" />
+
+    <TextView
+        android:id="@+id/offerItemDescription"
+        style="@style/H5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Легкая и непринужденная 3-х часовая прогулка по переулкам, закоулкам, подворотням, закрытым дворам, садам и даже паркам, спрятанным далеко от оживленных туристических улиц."
+        android:textAlignment="textStart"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.167"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/offerItemTitleBarrier" />
+
+    <Button
+        android:id="@+id/offerItemChangeButton"
+        style="@style/BlueButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/offerItemDeleteButton"
+        app:layout_constraintHeight_percent="0.133"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offerItemDescription" />
+
+    <Button
+        android:id="@+id/offerItemDeleteButton"
+        style="@style/GrayButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/offerItemChangeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.133"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/offerItemChangeButton"
+        app:layout_constraintTop_toTopOf="@+id/offerItemChangeButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.035"
+        app:layout_constraintTop_toTopOf="@+id/offerItemImage"
+        app:layout_constraintWidth_percent="0.075"
+        app:srcCompat="@drawable/heart"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

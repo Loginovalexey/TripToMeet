@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/impressionToolbar"
+        style="@style/Toolbar"
+        app:menu="@menu/toolbar_impression"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp">
+
+                <ImageView
+                    android:id="@+id/impressionTopImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trip_to_debrecen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/impressionTopTitle"
+                    style="@style/H1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/impressionScreenTitle"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/impressionTopImage"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/mainDescription"
+                style="@style/H4normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginStart"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/impressionScreenMainDescription"
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+
+            <include layout="@layout/devider"/>
+
+            <include
+                layout="@layout/item_local_for_impression_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginStart"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <include layout="@layout/devider"/>
+
+            <TextView
+                android:id="@+id/impressionDescriptionPart1"
+                style="@style/H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginStart"
+                android:layout_marginTop="16dp"
+                android:text="@string/impressionScreenDescription1"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/picturesLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/impressionDescriptionPart2"
+                style="@style/H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginStart"
+                android:layout_marginTop="@dimen/marginTop"
+                android:text="@string/impressionScreenDescription2"
+                android:textAlignment="textStart"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/spinnerOptionsLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <TextView
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/marginEnd"
+                android:gravity="start"
+                android:text="@string/shareWithFriends" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/marginStart"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/facebook_black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/instagram_black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/whatsapp_black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/tumbler_black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/twitter_blak"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/commentsLayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            </FrameLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/marginEnd"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/searchLocationInputLayout"
+                    style="@style/InputEditTextLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="@string/writeReview"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/searchLocationEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/InputEditText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/plusButton"
+                    style="@style/BlueButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/pluswhite"
+                    app:layout_constraintBottom_toBottomOf="@+id/searchLocationInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/searchLocationInputLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
